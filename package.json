@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "test": "test"
+  "test": "test"
   },
   "dependencies": {
     "mocha": "^10.0.0",
@@ -13,7 +13,7 @@
   },
 
   "type": "module",
-  
+
   "devDependencies": {},
   "scripts": {
     "test": "mocha"
