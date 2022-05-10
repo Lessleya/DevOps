@@ -5,10 +5,10 @@ steps:
     args:
       - "build"
       - "-t"
-      - "gcr.io/$PROJECT_ID/Lesliee-Cruz-stedi-test:latest"
+      - "gcr.io/$PROJECT_ID/lesliee-cruz-stedi-test:latest"
       - "."
   - name: "gcr.io/cloud-builders/docker"
     id: Push
     args:
       - "push"
-      - "gcr.io/$PROJECT_ID/Lesliee-Cruz-stedi-test:latest"
+      - "gcr.io/$PROJECT_ID/lesliee-cruz-stedi-test:latest"
