@@ -1,0 +1,31 @@
+{
+  "name": "devops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "mocha": "^10.0.0",
+    "node": "^17.7.2",
+    "node-fetch": "^3.2.4"
+  },
+
+  "type": "module",
+  
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lessleya/DevOps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lessleya/DevOps/issues"
+  },
+  "homepage": "https://github.com/Lessleya/DevOps#readme"
+}
