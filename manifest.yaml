@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lesliee-cruz-stedi
+spec:
+  replicas: 1 #this is how many pods you will have
+  selector:
+    matchLabels:
+      app: lesliee-cruz-stedi
+  template:
+    metadata:
+      labels:
+        app: lesliee-cruz-stedi
+    spec:
+      containers:
+        - name: lesliee-cruz-stedi
+          image: "gcr.io/project-funky-flex/stedi-lesliee-cruz:latest"
+          #you can get your project id in the google cloud
+          command: ["npm"]
+          args: ["run", "start"]
+          ports:
+            - containerPort: 3000
+          resources:
+            limits:
+              cpu: ".125"
+              memory: "500Mi"
+            requests:
+              cpu: ".1"
+              memory: "250Mi"
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 3
+            periodSeconds: 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
