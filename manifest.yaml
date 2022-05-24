@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: lesliee-cruz-stedi
-          image: "gcr.io/project-funky-flex/stedi-lesliee-cruz:latest"
+          image: "gcr.io/project-funky-flex/lesliee-cruz-stedi:latest"
           #you can get your project id in the google cloud
           command: ["npm"]
           args: ["run", "start"]
