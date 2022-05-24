@@ -5,15 +5,15 @@ steps:
     args:
       - "build"
       - "-t"
-      - "gcr.io/$PROJECT_ID/lesliee-cruz-stedi:latest"
+      - "gcr.io/project-funky-flex/lesliee-cruz-stedi:latest"
       - "."
   - name: "gcr.io/cloud-builders/docker"
     id: Push
     args:
       - "push"
-      - "gcr.io/$PROJECT_ID/lesliee-cruz-stedi:latest"
+      - "gcr.io/project-funky-flex/lesliee-cruz-stedi:latest"
   - name: "gcr.io/cloud-builders/docker"
     id: Test
     args:
       - "run"
-      - "gcr.io/$PROJECT_ID/lesliee-cruz-stedi:latest"
+      - "gcr.io/project-funky-flex/lesliee-cruz-stedi:latest"
