@@ -13,7 +13,6 @@
     "node-fetch": "^3.2.4"
   },
   "type": "module",
-  "devDependencies": {},
   "scripts": {
     "test": "mocha",
     "start": "node index.js"
